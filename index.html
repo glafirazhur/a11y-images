@@ -22,6 +22,7 @@
             );
 
             color: var(--color-text);
+            font-family: 'Trebuchet MS', Roboto, sans-serif;
         }
         /*.progress {
             box-shadow: calc(var(--slide-width) / 2) 0 0 calc(var(--slide-width) / 2) var(--color-heading);
@@ -59,6 +60,7 @@
 
         .slide blockquote::before {
             color: var(--color-key);
+            margin: -0.1em 0 0 -0.6em;
         }
 
         .slide blockquote + figcaption {
@@ -122,6 +124,10 @@
 </head>
 <body class="shower list">
 
+    <!-- TODO: прогнать тексты через типограф -->
+    <!-- TODO: дать сервис, в котором показывается количество символов в alt -->
+    <!-- TODO: https://habr.com/ru/company/mailru/blog/538546/ - статистика по alt -->
+
     <header class="caption">
         <h1>Угадай, что я слышу на картинке!</h1>
         <p>Глафира Жур</p>
@@ -161,12 +167,24 @@
     </section>
 
     <section class="slide">
-        <h2>Что надо знать про A11Y?</h2>
-        <ol>
-            <li class="next">A11Y = Accessibility</li>
-            <li class="next">Accessibility - это про всех!</li>
-            <li class="next"><strong>15% населения</strong> - люди с <em>дополнительными потребностями</em></li>
-        </ol>
+        <img src="pictures/a11y-name.svg" role="img" width="100%" alt="Accessibility = a11y">
+    </section>
+
+    <section class="slide">
+        <!-- TODO: Accessibility - это про всех! -->
+        <!-- TODO: Текст: не важно, незрячий вы человек или просто при ярком свете не видите эти картинки -->
+    </section>
+
+    <section class="slide">
+        <!-- TODO:
+            <strong>15% населения</strong> - люди с <em>дополнительными потребностями</em>
+        -->
+    </section>
+
+    <section class="slide">
+        <h2>Нужны ли картинки незрячим?</h2>
+        <!-- TODO: пример, где как бы можно все вырезать, и останется смысл, но уже не торт -->
+        <!-- TODO: Вот тут можно Deque -->
     </section>
 
     <section class="slide">
@@ -190,27 +208,40 @@
         <img src="pictures/cat-info3.png" alt="" width="100%">
     </section>
 
+    <section class="slide center small-top-padding">
+        <!-- TODO: Пример с контекстом либо из Deque, либо из практики (но с лыжником?) -->
+    </section>
+
+    <section class="slide">
+        <h2>Доступен ли текст на картинке?</h2>
+        <figure class="blockquote">
+            <blockquote>
+                <p>Я посмотрел - цвета очень хорошие, и мне всё нравится в целом, кроме одного слайда, который как будто и не должен нравиться - с инструкцией, как стричь кота.</p>
+                <p>Там и на картинках сложновато что-либо разобрать, и подписи под ними плывут при скрин-зуме. А еще нет абзацев и отступов, что дополнительно затрудняет чтение.</p>
+            </blockquote>
+            <figcaption>Дима Глюз, активист, который видит суть :)</figcaption>
+        </figure>
+    </section>
+
     <section class="slide clear">
         <h2 class="shout">Я не смогла прочесть инструкцию</h2>
-        <!-- TODO: фотка с котом без хваста -->
     </section>
 
     <section class="slide center small-top-padding">
         <br>
-        <img src="pictures/shusha.jpg" alt="Белый перс с неровно обстриженной попой, из которой торчит хвост" width="90%">
+        <img src="pictures/shusha.jpg" alt="Белый перс с неровно остриженной попой, из которой торчит хвост" width="90%">
     </section>
 
     <section class="slide">
         <h2>Как писать хороший alt</h2>
         <ol>
-            <li>alt должен быть как хороший твит (в пределах 150 символов)</li>
-            <li>В alt нельзя добавлять слова "картинка", "изображение", "графика"</li>
-            <li></li>
+            <li><samp>alt</samp> должен быть как хороший твит (в пределах 150 символов)</li>
+            <li>Убираем из <samp>alt</samp> слова &laquo;картинка&raquo;, &laquo;изображение&raquo;, &laquo;графика&raquo;</li>
+            <li><samp>alt</samp> не описывает картинку дословно</li>
             <li><a href="https://www.deque.com/blog/great-alt-text-introduction/">How to Design Great Alt Text: An Introduction</a></li>
             <li><a href="">Как писать альты статья</a></li>
         </ol>
     </section>
-
 
     <footer class="badge">
         <a href="https://github.com/shower/shower">Fork me on GitHub</a>
