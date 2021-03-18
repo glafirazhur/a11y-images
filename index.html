@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Угадай, что я слышу на картинке!</title>
+    <title>Accessibility Introduction</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/material/styles/styles.css">
@@ -100,6 +100,9 @@
             color: var(--color-key);
             font-weight: bold;
         }
+        .slide .copyright.bottom {
+            font-size: 20px;
+        }
 
         /* Custom */
 
@@ -129,15 +132,13 @@
     <!-- TODO: https://habr.com/ru/company/mailru/blog/538546/ - статистика по alt -->
 
     <header class="caption">
-        <h1>Угадай, что я слышу на картинке!</h1>
-        <p>Глафира Жур</p>
+        <h1>Accessibility Introduction</h1>
+        <p>Glafira Zhur</p>
     </header>
 
     <section class="slide clear">
-        <div class="center">
-            <h2>Угадай, что я слышу <br>на картинке!</h2>
-            <img src="pictures/shusha1.jpg" width="60%" alt="Кошка иронично показывает язык">
-        </div>
+        <h2 class="shout">Accessibility Introduction</h2>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
     </section>
 
     <section class="slide">
@@ -146,48 +147,119 @@
                 <img src="pictures/glafira_zhur.jpg" width="350" alt="Портрет Глаши на фоне голубого весеннего неба">
             </figure>
             <div>
-                <h2>Глафира Жур</h2>
+                <h2>Glafira Zhur</h2>
                 <div>
                     <p class="info-text">
-                        Главный a11y-котик в&nbsp;<img width="150" class="spurit-logo" src="pictures/logo--white1.png" alt="Логотип компании SputIT">
+                        Accessibility Enthusiast at&nbsp;<img width="150" class="spurit-logo" src="pictures/logo--white1.png" alt="Логотип компании SputIT">
                         <br>
-                        Преподаватель на курсе <a href="https://twitter.com/glafirazhur"  target="_blank">kurmak.info</a>
+                        Accessibility Mentor at <a href="https://twitter.com/glafirazhur"  target="_blank">kurmak.info</a>
                     </p>
                     <p class="info-text">
                         <strong>Twitter</strong>: <a href="https://twitter.com/glafirazhur"  target="_blank">@GlafiraZhur</a>
                     </p>
-                    <p class="info-text"><strong>Помогаю делать</strong>: <br><a href="https://twitter.com/a11yminsk" target="_blank">@a11yminsk</a><br><a href="https://twitter.com/MinskCSS" target="_blank">@MinskCSS</a> и <a href="https://twitter.com/MinskJS"  target="_blank">@MinskJS</a></p>
+                    <p class="info-text"><strong>Community Driver</strong>: <br><a href="https://twitter.com/a11yminsk" target="_blank">@a11yminsk</a><br><a href="https://twitter.com/MinskCSS" target="_blank">@MinskCSS</a> и <a href="https://twitter.com/MinskJS"  target="_blank">@MinskJS</a></p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="slide">
+        <h2>Outline</h2>
+        <ol>
+            <li class="next">Intro</li>
+            <li class="next">Screen Readers</li>
+            <li class="next">Forms</li>
+            <li class="next">Tools</li>
+        </ol>
+
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section>
+
     <section class="slide clear">
-        <h2 class="shout">Это доклад <br>про Accessibility</h2>
+        <h2 class="shout">The main thing<br>you should know<br>=></h2>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
     </section>
 
     <section class="slide">
         <img src="pictures/a11y-name.svg" role="img" width="100%" alt="Accessibility = a11y">
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
     </section>
 
     <section class="slide">
-        <!-- TODO: Accessibility - это про всех! -->
-        <!-- TODO: Текст: не важно, незрячий вы человек или просто при ярком свете не видите эти картинки -->
+        <h2 class="shout">Importance</h2>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
     </section>
 
     <section class="slide">
-        <!-- TODO:
-            <strong>15% населения</strong> - люди с <em>дополнительными потребностями</em>
-        -->
+        <h2 class="shout">Screen Readers</h2>
+        <a href="https://dequeuniversity.com/screenreaders/survival-guide" class="copyright right" target="_blank">SR Guide</a>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
     </section>
 
     <section class="slide">
-        <h2>Нужны ли картинки незрячим?</h2>
-        <!-- TODO: пример, где как бы можно все вырезать, и останется смысл, но уже не торт -->
-        <!-- TODO: Вот тут можно Deque -->
+        <h2>Screen Readers</h2>
+        <ol>
+            <li class="next">VoiceOver Desktop</li>
+            <li class="next">VoiceOver Mobile</li>
+            <li class="next">TalkBack (Android)</li>
+            <li class="next"><a href="https://www.freedomscientific.com/products/software/jaws/">JAWS</a> <a
+                href="https://dequeuniversity.com/screenreaders/jaws-keyboard-shortcuts">(shortcuts)</a></li>
+            <li class="next"><a href="https://www.nvaccess.org/download/">NVDA</a> <a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts">(shortcuts)</a></li>
+            <li class="next">Narrator (Windows)</li>
+        </ol>
+
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+        <a href="https://webaim.org/projects/screenreadersurvey8/" class="copyright right" target="_blank">WebAIM Survey</a>
     </section>
 
     <section class="slide">
+        <h2 class="shout">
+            <a href="https://free-now.com/">Free Now <br>service</a>
+        </h2>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section>
+
+    <section class="slide">
+        <h2>Cumulative Layout Shift</h2>
+        <img src="pictures/cls1.png" width="100%"  alt="">
+        <a class="copyright right" href="https://web.dev/cls/" target="_blank">CLS</a>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Forms</h2>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <a href="https://partners.bolt.eu/">Bolt</a><br>
+            <a href="https://login.free-now.com/">Free Now</a>
+        </h2>
+        <a href="https://dequeuniversity.com/screenreaders/forms-guide" class="copyright right" target="_blank">Forms SR guide</a>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section>
+
+    <section class="slide">
+       <h2 class="shout">Tools</h2>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section>
+
+    <section class="slide">
+        <h2>Tools and helpers</h2>
+        <ol>
+            <li class="next"><a href="https://www.w3.org/TR/wai-aria-practices-1.2/">WAI ARIA practices 1.2</a></li>
+            <li class="next">axe Dev Tools (14-days free trial)</li>
+            <li class="next">Wave</li>
+            <li class="next">Chrome Dev Tools (color, emulator)</li>
+            <li class="next">Google Lighthouse</li>
+            <li class="next">Web Development Tools</li>
+        </ol>
+
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section>
+
+
+    <!--section class="slide">
         <h2>Нужны ли картинки незрячим?</h2>
         <br>
         <figure class="blockquote">
@@ -198,21 +270,9 @@
 
             <figcaption>Паша Попко, незрячий тестировщик из Сбера</figcaption>
         </figure>
-    </section>
+    </section-->
 
-    <section class="slide clear">
-        <h2 class="shout">Как постричь <br>кота<br> <span class="subheading">Инструкция</span></h2>
-    </section>
-
-    <section class="slide center small-top-padding">
-        <img src="pictures/cat-info3.png" alt="" width="100%">
-    </section>
-
-    <section class="slide center small-top-padding">
-        <!-- TODO: Пример с контекстом либо из Deque, либо из практики (но с лыжником?) -->
-    </section>
-
-    <section class="slide">
+    <!--section class="slide">
         <h2>Доступен ли текст на картинке?</h2>
         <figure class="blockquote">
             <blockquote>
@@ -221,18 +281,21 @@
             </blockquote>
             <figcaption>Дима Глюз, активист, который видит суть :)</figcaption>
         </figure>
-    </section>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section-->
 
-    <section class="slide clear">
+    <!--section class="slide clear">
         <h2 class="shout">Я не смогла прочесть инструкцию</h2>
-    </section>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section-->
 
-    <section class="slide center small-top-padding">
+    <!--section class="slide center small-top-padding">
         <br>
         <img src="pictures/shusha.jpg" alt="Белый перс с неровно остриженной попой, из которой торчит хвост" width="90%">
-    </section>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section-->
 
-    <section class="slide">
+    <!--section class="slide">
         <h2>Как писать хороший alt</h2>
         <ol>
             <li><samp>alt</samp> должен быть как хороший твит (в пределах 150 символов)</li>
@@ -241,6 +304,25 @@
             <li><a href="https://www.deque.com/blog/great-alt-text-introduction/">How to Design Great Alt Text: An Introduction</a></li>
             <li><a href="">Как писать альты статья</a></li>
         </ol>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
+    </section-->
+
+    <section class="slide">
+        <div class="columns two">
+            <figure>
+                <!-- TODO добавить другое фото (с конференции например -->
+                <img src="pictures/glafira_zhur.jpg" width="350" alt="Портрет Глаши на фоне голубого весеннего неба">
+            </figure>
+            <div>
+                <h2>Thank you!</h2>
+                <div>
+                    <p class="info-text">
+                        <strong>Twitter</strong>: <a href="https://twitter.com/glafirazhur"  target="_blank">@GlafiraZhur</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="https://twitter.com/glafirazhur" class="copyright bottom" target="_blank">@GlafiraZhur</a>
     </section>
 
     <footer class="badge">
